@@ -1,0 +1,26 @@
+/* property-list.component.css */
+.property-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.property-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+  .property-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+.price {
+  font-weight: bold;
+}

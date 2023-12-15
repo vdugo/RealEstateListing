@@ -1,0 +1,21 @@
+<!-- app.component.html -->
+<h1>Real Estate Listing Platform</h1>
+
+<nav>
+  <a routerLink="/">Home</a><br /> <!-- Link to Home -->
+  <a routerLink="/properties">View Properties</a><br /> <!-- Link to View Properties -->
+  <a routerLink="/login">Login</a><br /> <!-- Link for Login -->
+</nav>
+
+<!-- Display user email if logged in -->
+<div *ngIf="userEmail">
+  <p>You are logged in as: {{ userEmail }}</p>
+</div>
+
+<router-outlet></router-outlet>
+
+<!-- Properties listing and other page content here -->
+
+<footer>
+  <p>© 2023 Real Estate Listing Platform</p>
+</footer>

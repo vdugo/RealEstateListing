@@ -1,0 +1,13 @@
+<!-- property-list.component.html -->
+<div *ngIf="properties && properties.length > 0; else noProperties" class="property-container">
+  <div *ngFor="let property of properties" class="property-card">
+    <img *ngIf="property.image" [src]="getImageUrl(property.image)" alt="{{ property.title }}">
+    <h2>{{ property.title }}</h2>
+    <p>{{ property.description }}</p>
+    <p class="price">Price: {{ property.price | currency }}</p>
+  </div>
+</div>
+
+<ng-template #noProperties>
+  <p>No properties available.</p>
+</ng-template>

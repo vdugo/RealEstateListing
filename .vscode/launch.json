@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "localhost (Chrome)",
+      "url": "https://localhost:4200",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "pwa-chrome", // Brave is based on Chromium, so use pwa-chrome type
+      "request": "launch",
+      "name": "localhost (Brave)",
+      "url": "https://localhost:4200",
+      "webRoot": "${workspaceFolder}",
+      "runtimeExecutable": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe" // Ensure this path is correct for your system
+    }
+  ]
+}
